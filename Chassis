@@ -7,7 +7,9 @@ public class Chassis {
     private final static CANSparkMax LEFT_BACK_MOTOR(RobotMap.LEFT_BACK_MOTOR, CANSparkMax.MotorType.kbrushless);
     private final static CANSparkMax Right_FRONT_MOTOR(RobotMap.RIGHT_FRONT_MOTOR, CANSparkMax.MotorType.kbrushless);
     private final static CANSparkMax RIGHT_BACK_MOTOR(RobotMap.RIGHT_FRONT_MOTOR, CANSparkMax.MotorType.kbrushless);
+
     public static(main){
+       
         LEFT_FRONT_MOTOR.invert(true);
         LEFT_BACK_MOTOR.invert(true);
 
@@ -24,6 +26,5 @@ public class Chassis {
         } 
 
     }
-
 
 }
