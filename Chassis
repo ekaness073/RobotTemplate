@@ -15,7 +15,13 @@ public class Chassis {
             LEFT_FRONT_MOTOR().set(left);
             Right_FRONT_MOTOR(). set(right);
         }
-        public void setIdleMode(CANSparkMax);
+        public void setIdleMode(CANSparkMax.IdleMode mode){
+            LEFT_FRONT_MOTOR.setIdleMode(mode);
+            LEFT_BACK_MOTOR.setIdleMode(mode);
+            RIGHT_FRONT_MOTOR.setIdleMode(mode);
+            RIGHT_BACK_MOTOR.setIdleMode(mode);
+
+        } 
 
     }
 
